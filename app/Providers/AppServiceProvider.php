@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Console\Scheduling\Schedule;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -14,7 +13,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //decrese schema length
         Schema::defaultStringLength(191);
     }
 
